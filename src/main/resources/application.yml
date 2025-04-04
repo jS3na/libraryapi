@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: libraryapi
+
+  #credenciais para conexão com banco de dados
+  datasource:
+    url: jdbc:postgresql://localhost:5432/library
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  #uma espécie de "migration" (não utilizar em produção)
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
